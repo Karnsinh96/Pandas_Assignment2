@@ -41,11 +41,15 @@ print("\n",a.value_counts().sort_values(ascending=False).head())
 
 #DataFrame Info.
 print("\n",)
+
 #Describe all the columns
 print("\n",users.describe(include="all"))
+
 #Summarize only the occupation column
 print("\n",users.occupation.describe())
+
 #What is the mean age of users?
 print("\n",users.age.mean())
+
 #What is the age with least occurrence?
 print("\n",users.age.value_counts().tail())
